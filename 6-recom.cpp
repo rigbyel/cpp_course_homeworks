@@ -18,7 +18,6 @@ int *index(string date) {
     int i = rand() % 3;
     int random[3]{ 0, 11111111, 22222222 };
     sum = pow(sum, power/2) + random[i];
-    cout << sum << endl;
     static int index[5];
     index[0] = (sum) & 0b00001101;
     index[1] = (sum >> 4) & 0b00001101;
