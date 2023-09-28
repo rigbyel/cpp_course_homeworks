@@ -4,7 +4,7 @@
 using namespace std;
 
 bool isEven(signed long int num){
-    return num % 2 == 0;
+    return !(num % 2 == 0);
 }
 
 bool isEvenBits(signed long int num){
