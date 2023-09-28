@@ -1,27 +1,18 @@
 # include <iostream>
-#include <time.h> 
+# include <time.h> 
 
 using namespace std;
 
 bool isEven(signed long int num){
-    if (num % 2 == 0){
-        return true;
-    }
-    return false;
+    return num % 2 == 0;
 }
 
 bool isEvenBits(signed long int num){
-    if (num & 0b1){
-        return false;
-    }
-    return true;
+     return !(num & 0b1);
 }
 bool isEvenBitsSdvig(signed long int num){
     signed long int new_num = num >> 1;
-    if (num ==  new_num << 1){
-        return true;
-    }
-    return false;
+    return num == new_num << 1;
 }
 
 double benchmark(bool foo(signed long int)){
