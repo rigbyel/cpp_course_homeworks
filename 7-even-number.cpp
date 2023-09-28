@@ -48,9 +48,8 @@ double benchmark_rand(bool foo(signed long int)){
         foo(nums[i]);
     }
     end = clock();
-    avg_time += ((double)(end - start))/(n * CLOCKS_PER_SEC);
-
-    return avg_time / n;
+    
+    return ((double)(end - start))/(n * CLOCKS_PER_SEC);
 }
 
 int main(){
